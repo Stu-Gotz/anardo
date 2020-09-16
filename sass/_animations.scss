@@ -1,0 +1,107 @@
+/* credit for rainbow animation: https://codepen.io/nohoid/pen/kIfto
+no need to reinvent the wheel */
+
+@-webkit-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+
+
+/* sliding gradient */
+@-webkit-keyframes slide {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+@-moz-keyframes slide {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+@-o-keyframes slide {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+@keyframes slide {
+  0% {
+    background-position: 100% 10%;
+  }
+  50% {
+    background-position: 10% 100%;
+  }
+  100% {
+    background-position: 100% 10%;
+  }
+}
+
+/* fancy list ting */
+@-webkit-keyframes animateList {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes animateList {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes animateList {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animateList {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}

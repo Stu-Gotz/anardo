@@ -1,0 +1,34 @@
+layout
+
+colors
+    - pastels
+    - dark theme (should be js out-the-box for a ds toggle)
+
+navbar
+    -home
+    -about
+    -save(?)
+    -export(?)
+    -link to smogon analysis pages(?) simple url builder
+    -link to bulbapedia(?)
+    -link to thread if made
+
+sidebar
+    -input fields
+    -option buttons (go / clear at least)
+    -mon image 
+    -base stats && maybe common spreads
+    -[most common] item image
+    -cute pokeball reset option
+    -
+
+main window
+    -graphs of historical usage
+    -display moves, common items, common spreads as well, usage
+    -change since last month (position & arrow, green up red down)
+
+footer
+    -link to home
+    -link email for feedback (set up email account.)
+    -link to python/github
+    

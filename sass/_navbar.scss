@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  flex-flow: row-reverse;
+  padding: 1rem 1.5rem;
+
+  &__list {
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--item {
+      opacity: .6;
+
+      &:not(:last-child) {
+        padding-right: 1.5rem;
+      }
+
+      &:hover {
+        filter: blur(2px);
+      }
+    }
+  }
+}
