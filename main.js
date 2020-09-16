@@ -14,7 +14,7 @@ const insertAbout = () => {
 
     const markup = `
     <h3 class="about">I am an adaptive person looking to further my career in software development. I have spent the last year learning and applying technical knowledge to accomplish tasks at work, particularly using Python to make API calls to services, web-scraping, cleaning, storing and displaying data. I have thoroughly enjoyed the challenge and have under taken learning Sass/CSS, HTML, and nodeJS/Javascript. I am eager to begin a new challenge and apply myself to new, challenging and different problems.
-    <br><br>Life happened and I am losing my contracted position, so I made this page in an effort to prove competency and hopefully land a job. I know it's not world-beating, but I made it in about a day because, as my boss says "don't let perfect the enemy of good".</h3>
+    <br><br>Life happened and I am losing my contracted position, so I made this page in an effort to prove competency and hopefully land a job. I know it's not world-beating, but I made it in about a day because, as my boss says "don't let perfect the enemy of good". I plan to improve on as the days go by.</h3>
     `;
 
     DOMStrings.main.insertAdjacentHTML('afterbegin', markup);

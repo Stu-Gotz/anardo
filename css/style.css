@@ -1,3 +1,4 @@
+/* media queries */
 *,
 *::before,
 *::after {
@@ -8,6 +9,9 @@
 html {
   font-size: 62.5%;
   height: 100%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Lemonada", Helvetica, sans-serif;
@@ -21,6 +25,10 @@ body {
   -o-animation: rainbow 18s ease infinite;
   animation: rainbow 18s ease infinite;
   color: #49001D; }
+  @media only screen and (max-width: 31.25em) {
+    body {
+      background-size: cover;
+      animation: none; } }
 
 ul {
   list-style: none; }
@@ -35,11 +43,18 @@ a::after {
   display: flex;
   width: 50%;
   justify-content: space-around; }
+  @media only screen and (max-width: 31.25em) {
+    .btns {
+      flex-direction: column; } }
 
 .btn {
   padding: 1rem 2.5rem;
   border: 3px solid #481054;
-  border-radius: 100px; }
+  border-radius: 100px;
+  text-align: center; }
+  @media only screen and (max-width: 31.25em) {
+    .btn {
+      padding: .5rem; } }
 
 .footer {
   padding: 0 1rem; }
@@ -48,6 +63,9 @@ a::after {
     text-align: right; }
   .footer a {
     color: black; }
+  @media only screen and (max-width: 31.25em) {
+    .footer {
+      visibility: hidden; } }
 
 /* credit for rainbow animation: https://codepen.io/nohoid/pen/kIfto
 no need to reinvent the wheel */
@@ -185,6 +203,10 @@ no need to reinvent the wheel */
     color: transparent;
     animation-play-state: running;
     text-shadow: none; }
+  @media only screen and (max-width: 31.25em) {
+    .name {
+      text-align: center;
+      font-size: 3rem; } }
 
 .about {
   padding: 1.5rem 11rem;
@@ -192,6 +214,10 @@ no need to reinvent the wheel */
   font-weight: 200;
   font-family: Helvetica, sans-serif;
   text-align: center; }
+  @media only screen and (max-width: 31.25em) {
+    .about {
+      padding: 0 1rem;
+      font-weight: 300; } }
 
 .btn__main--1,
 .btn__main--2,
@@ -207,6 +233,9 @@ no need to reinvent the wheel */
   margin-bottom: 1rem; }
 
 .knowledge > * {
+  -moz-animation: animateList 5s;
+  -o-animation: animateList 5s;
+  -webkit-animation: animateList 5s;
   animation: animateList 5s;
   animation-delay: 0s;
   animation-fill-mode: both; }

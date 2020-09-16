@@ -38,6 +38,11 @@
     text-shadow: none;
     
   }
+
+  @media only screen and (max-width: $bp-smallest) {
+    text-align: center;
+    font-size: 3rem;
+  }
 }
 
 .about {
@@ -46,6 +51,11 @@
   font-weight: 200;
   font-family: Helvetica, sans-serif;
   text-align: center;
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 0 1rem;
+    font-weight: 300;
+  }
 }
 
 
@@ -70,6 +80,9 @@
   }
 
   & > * {
+    -moz-animation: animateList 5s;
+    -o-animation: animateList 5s;
+    -webkit-animation: animateList 5s;
     animation: animateList 5s;
     animation-delay: 0s;
     animation-fill-mode: both;
