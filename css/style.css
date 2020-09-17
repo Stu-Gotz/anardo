@@ -258,6 +258,7 @@ no need to reinvent the wheel */
   font-weight: 200;
   font-family: Helvetica, sans-serif;
   text-align: center;
+  color: #B65B80;
   width: 60%; }
   @media only screen and (max-width: 31.25em) {
     .about {
