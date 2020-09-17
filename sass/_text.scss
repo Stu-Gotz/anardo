@@ -36,7 +36,6 @@
     color: transparent;
     animation-play-state: running; 
     text-shadow: none;
-    
   }
 
   @media only screen and (max-width: $bp-smallest) {
@@ -46,18 +45,19 @@
 }
 
 .about {
-  padding: 1.5rem 11rem;
+  padding: 1.5rem;
   font-size: 1.6rem;
   font-weight: 200;
   font-family: Helvetica, sans-serif;
   text-align: center;
 
+  width: 60%;
   @media only screen and (max-width: $bp-smallest) {
     padding: 0 1rem;
     font-weight: 300;
+    width: 100%;
   }
 }
-
 
 .btn__main--1,
 .btn__main--2,
@@ -71,8 +71,6 @@
 }
 
 .knowledge {
-
-
   & > * {
     &:not(:last-child) {
       margin-bottom: 1rem;
@@ -87,10 +85,16 @@
     animation-delay: 0s;
     animation-fill-mode: both;
   }
+  @for $i from 1 through 5 {
+    li:nth-child(#{$i}) {
+      animation-delay: .25s * $i;
+    }  
+  }
 }
 
-@for $i from 1 through 5 {
-  li:nth-child(#{$i}) {
-    animation-delay: .25s * $i;
-  }  
+.about__text {
+  -moz-animation: fadeIn 2s linear;
+  -o-animation: fadeIn 2s linear;
+  -webkit-animation: fadeIn 2s linear;
+  animation: fadeIn 2s linear;
 }

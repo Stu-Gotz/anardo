@@ -161,9 +161,53 @@ no need to reinvent the wheel */
   100% {
     opacity: 1; } }
 
+/* fadeIn animation */
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    color: #B65B80; }
+  50% {
+    opacity: .25;
+    color: #B65B80; }
+  100% {
+    opacity: 1;
+    color: #49001D; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    color: #B65B80; }
+  50% {
+    opacity: .25;
+    color: #B65B80; }
+  100% {
+    opacity: 1;
+    color: #49001D; } }
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    color: #B65B80; }
+  50% {
+    opacity: .25;
+    color: #B65B80; }
+  100% {
+    opacity: 1;
+    color: #49001D; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    color: #B65B80; }
+  50% {
+    opacity: .25;
+    color: #B65B80; }
+  100% {
+    opacity: 1;
+    color: #49001D; } }
+
 .navbar {
   display: flex;
-  flex-flow: row-reverse;
   padding: 1rem 1.5rem; }
   .navbar__list {
     list-style: none;
@@ -174,8 +218,8 @@ no need to reinvent the wheel */
     justify-content: center; }
     .navbar__list--item {
       opacity: .6; }
-      .navbar__list--item:not(:last-child) {
-        padding-right: 1.5rem; }
+      .navbar__list--item:not(:first-child) {
+        margin-left: 1.5rem; }
       .navbar__list--item:hover {
         filter: blur(2px); }
 
@@ -209,15 +253,17 @@ no need to reinvent the wheel */
       font-size: 3rem; } }
 
 .about {
-  padding: 1.5rem 11rem;
+  padding: 1.5rem;
   font-size: 1.6rem;
   font-weight: 200;
   font-family: Helvetica, sans-serif;
-  text-align: center; }
+  text-align: center;
+  width: 60%; }
   @media only screen and (max-width: 31.25em) {
     .about {
       padding: 0 1rem;
-      font-weight: 300; } }
+      font-weight: 300;
+      width: 100%; } }
 
 .btn__main--1,
 .btn__main--2,
@@ -240,17 +286,23 @@ no need to reinvent the wheel */
   animation-delay: 0s;
   animation-fill-mode: both; }
 
-li:nth-child(1) {
+.knowledge li:nth-child(1) {
   animation-delay: 0.25s; }
 
-li:nth-child(2) {
+.knowledge li:nth-child(2) {
   animation-delay: 0.5s; }
 
-li:nth-child(3) {
+.knowledge li:nth-child(3) {
   animation-delay: 0.75s; }
 
-li:nth-child(4) {
+.knowledge li:nth-child(4) {
   animation-delay: 1s; }
 
-li:nth-child(5) {
+.knowledge li:nth-child(5) {
   animation-delay: 1.25s; }
+
+.about__text {
+  -moz-animation: fadeIn 2s linear;
+  -o-animation: fadeIn 2s linear;
+  -webkit-animation: fadeIn 2s linear;
+  animation: fadeIn 2s linear; }

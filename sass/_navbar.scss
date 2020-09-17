@@ -1,6 +1,5 @@
 .navbar {
   display: flex;
-  flex-flow: row-reverse;
   padding: 1rem 1.5rem;
 
   &__list {
@@ -15,8 +14,8 @@
     &--item {
       opacity: .6;
 
-      &:not(:last-child) {
-        padding-right: 1.5rem;
+      &:not(:first-child) {
+        margin-left: 1.5rem;
       }
 
       &:hover {
