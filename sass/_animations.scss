@@ -110,60 +110,56 @@ no need to reinvent the wheel */
 @-moz-keyframes fadeIn {
   0% {
     opacity: 0;
-    color: $color-secondary-1-2;
+    
   }
 
   50% {
     opacity: .25;
-    color: $color-secondary-1-2;
+    
   }
   100% {
     opacity: 1;
-    color: $color-secondary-1-4;
   }
 }
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
-    color: $color-secondary-1-2;
+    
   }
 
   50% {
     opacity: .25;
-    color: $color-secondary-1-2;
+    
   }
   100% {
     opacity: 1;
-    color: $color-secondary-1-4;
   }
 }
 @-o-keyframes fadeIn {
   0% {
     opacity: 0;
-    color: $color-secondary-1-2;
+    
   }
 
   50% {
     opacity: .25;
-    color: $color-secondary-1-2;
+    
   }
   100% {
     opacity: 1;
-    color: $color-secondary-1-4;
   }
 }
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    color: $color-secondary-1-2;
+    
   }
 
   50% {
     opacity: .25;
-    color: $color-secondary-1-2;
+    
   }
   100% {
     opacity: 1;
-    color: $color-secondary-1-4;
   }
 }

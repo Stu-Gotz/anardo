@@ -13,6 +13,7 @@ const clearSection = () => {
 const insertAbout = () => {
 
     const markup = `
+    <div class="about__text mode-light"></div>
     <div class="about__text">I am an adaptive person looking to further my career in software development. I have spent the last year learning and applying technical knowledge to accomplish tasks at work, particularly using Python to make API calls to services, web-scraping, cleaning, storing and displaying data. I have thoroughly enjoyed the challenge and have under taken learning Sass/CSS, HTML, and nodeJS/Javascript. I am eager to begin a new challenge and apply myself to new, challenging and different problems.</div>
     `;
 
@@ -22,13 +23,13 @@ const insertAbout = () => {
 const insertTech = () => {
 
     const markup = `
-    <ul class="knowledge">
-        <li>CSS & Sass</li>
-        <li>HTML</li>
-        <li>Javascript (ES5/6)</li>
-        <
-        <li>Python 3.x</li>
+    <ul class="skills mode-light">
+        <li><a class="skills__item mode-light" href="https://github.com/Stu-Gotz/solarsystem">CSS & Sass</a></li>
+        <li><a class="skills__item mode-light" href="">HTML</a></li>
+        <li><a class="skills__item mode-light" href="https://github.com/Stu-Gotz/usage_server">Javascript (ES5/6)</a> & <a class="skills__item" href="https://github.com/Stu-Gotz/pkmneval">Vue</a></li>
+        <li><a class="skills__item mode-light" href="https://github.com/Stu-Gotz/smog_usage_stats">Python 3.x</a></li>
         <li>PostgreSQL</li>
+        <li><a class="skills__item mode-light" href="https://github.com/Stu-Gotz/shrektime">Silly sense of humour</a></li>
     </ul>
     `;
 
@@ -38,7 +39,7 @@ const insertTech = () => {
 const insertHire = () => {
 
     const markup = `
-    <div class="hire__text"> I'm cheap, eager to learn, driven by curiosity and the desire to grow rather than money. I believe in minimal design, and simple, easy to navigate layouts. Having worked for the government and dealt with what can be described using diplomatic language as "horrible websites" I want to make the internet a nicer place, with prettier pages.</div>
+    <div class="hire__text"></div>
     `;
 
     DOMStrings.main.insertAdjacentHTML('afterbegin', markup);

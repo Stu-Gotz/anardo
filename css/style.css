@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap");
 /* media queries */
 *,
 *::before,
@@ -14,16 +15,11 @@ html {
       font-size: 50%; } }
 
 body {
-  font-family: "Lemonada", Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  background: linear-gradient(124deg, rgba(99, 39, 112, 0.7), rgba(158, 113, 168, 0.7), rgba(128, 72, 140, 0.7), rgba(72, 16, 84, 0.7), rgba(47, 1, 56, 0.7));
-  background-size: 400% 400%;
-  -webkit-animation: rainbow 18s ease infinite;
-  -z-animation: rainbow 18s ease infinite;
-  -o-animation: rainbow 18s ease infinite;
-  animation: rainbow 18s ease infinite;
+  background: #e5e6e0;
   color: #49001D; }
   @media only screen and (max-width: 31.25em) {
     body {
@@ -41,8 +37,7 @@ a::after {
 
 .btns {
   display: flex;
-  width: 50%;
-  justify-content: space-around; }
+  justify-content: space-between; }
   @media only screen and (max-width: 31.25em) {
     .btns {
       flex-direction: column; } }
@@ -164,47 +159,35 @@ no need to reinvent the wheel */
 /* fadeIn animation */
 @-moz-keyframes fadeIn {
   0% {
-    opacity: 0;
-    color: #B65B80; }
+    opacity: 0; }
   50% {
-    opacity: .25;
-    color: #B65B80; }
+    opacity: .25; }
   100% {
-    opacity: 1;
-    color: #49001D; } }
+    opacity: 1; } }
 
 @-webkit-keyframes fadeIn {
   0% {
-    opacity: 0;
-    color: #B65B80; }
+    opacity: 0; }
   50% {
-    opacity: .25;
-    color: #B65B80; }
+    opacity: .25; }
   100% {
-    opacity: 1;
-    color: #49001D; } }
+    opacity: 1; } }
 
 @-o-keyframes fadeIn {
   0% {
-    opacity: 0;
-    color: #B65B80; }
+    opacity: 0; }
   50% {
-    opacity: .25;
-    color: #B65B80; }
+    opacity: .25; }
   100% {
-    opacity: 1;
-    color: #49001D; } }
+    opacity: 1; } }
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
-    color: #B65B80; }
+    opacity: 0; }
   50% {
-    opacity: .25;
-    color: #B65B80; }
+    opacity: .25; }
   100% {
-    opacity: 1;
-    color: #49001D; } }
+    opacity: 1; } }
 
 .navbar {
   display: flex;
@@ -229,6 +212,9 @@ no need to reinvent the wheel */
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .main-text {
+      justify-content: space-evenly; } }
 
 .name {
   background: linear-gradient(145deg, rgba(73, 0, 29, 0.7) 0%, rgba(219, 146, 175, 0.7) 20%, rgba(182, 91, 128, 0.7) 40%, rgba(109, 18, 55, 0.7) 60%, rgba(146, 49, 88, 0.7) 80%);
@@ -236,7 +222,7 @@ no need to reinvent the wheel */
   background-clip: text;
   background-size: 300%;
   font-size: 6rem;
-  color: #6D1237;
+  color: #49001D;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
   -webkit-animation: slide 10s linear infinite;
   -z-animation: slide 10s linear infinite;
@@ -250,7 +236,8 @@ no need to reinvent the wheel */
   @media only screen and (max-width: 31.25em) {
     .name {
       text-align: center;
-      font-size: 3rem; } }
+      font-size: 3rem;
+      animation: none; } }
 
 .about {
   padding: 1.5rem;
@@ -276,10 +263,14 @@ no need to reinvent the wheel */
   .btn__main--3:hover {
     color: #96C161; }
 
-.knowledge > *:not(:last-child) {
-  margin-bottom: 1rem; }
+.skills > * {
+  color: #2F0138; }
+  .skills > * > * {
+    color: #2F0138; }
+  .skills > *:not(:last-child) {
+    margin-bottom: 1rem; }
 
-.knowledge > * {
+.skills > * {
   -moz-animation: animateList 5s;
   -o-animation: animateList 5s;
   -webkit-animation: animateList 5s;
@@ -287,19 +278,19 @@ no need to reinvent the wheel */
   animation-delay: 0s;
   animation-fill-mode: both; }
 
-.knowledge li:nth-child(1) {
+.skills li:nth-child(1) {
   animation-delay: 0.25s; }
 
-.knowledge li:nth-child(2) {
+.skills li:nth-child(2) {
   animation-delay: 0.5s; }
 
-.knowledge li:nth-child(3) {
+.skills li:nth-child(3) {
   animation-delay: 0.75s; }
 
-.knowledge li:nth-child(4) {
+.skills li:nth-child(4) {
   animation-delay: 1s; }
 
-.knowledge li:nth-child(5) {
+.skills li:nth-child(5) {
   animation-delay: 1.25s; }
 
 .about__text {
